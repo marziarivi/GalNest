@@ -28,6 +28,8 @@
     Command line input parameters:
     argv[1]  filename Measurement Set
     argv[2]  number of live points
+    argv[3]  field of view in arcsec
+    argv[4]  resume flag (0/1)
 */
 
 #ifdef USE_MPI
