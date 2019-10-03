@@ -1,7 +1,7 @@
 # GalNest
-[Radio Galaxy Detection in the Visibility Domain](https://arxiv.org/abs/1810.12930), A. Malyali, M. Rivi, F.B. Abdalla, J.D. McEwen, 2019, MNRAS 486(2) 2695–2704
+__Radio Galaxy Detection in the Visibility Domain__ 
 
-Bayesian model-fitting method working in the Fourier domain adopting a single SF galaxy model (the exponential profile, i.e. Sersic of index 1). The resulting multimodal posterior distribution is sampled using a [multimodal nested sampling](https://ccpforge.cse.rl.ac.uk/gf/project/multinest/) algorithm. 
+Bayesian model-fitting method working in the Fourier domain adopting a single SF galaxy model (the exponential profile, i.e. Sersic of index 1). The resulting multimodal posterior distribution is sampled using a [multimodal nested sampling](https://ccpforge.cse.rl.ac.uk/gf/project/multinest/) algorithm. See the related [paper](https://arxiv.org/abs/1810.12930) by A. Malyali, M. Rivi, F.B. Abdalla, J.D. McEwen, 2019, MNRAS 486(2) 2695–2704.
 
 This is the C version of the [python code](https://github.com/amalyali/RadioGalFit/tree/master/GalNest). MPI + OpenMP parallelization. where each MPI task will read a different spectral window of the dataset that must be split in independent MS files. MPI can be enabled/disabled in the Makefile.
 
