@@ -292,7 +292,8 @@ int main(int argc, char *argv[])
       int maxModes = 100;			// expected max no. of modes (used only for memory allocation)
       int pWrap[ndims];				// which parameters to have periodic boundary conditions?
       for(int i = 0; i < ndims; i++) pWrap[i] = 0;
-      char root[100] = "/share/data1/mrivi/JVLA-5GHz/JVLA-2ch-500-5GHZ-";	// root for output files
+      char root[100];
+      sprintf(root,"/share/data1/mrivi/JVLA-5GHz/JVLA-%d-%d-5GHZ-",nprocs,nlive);	// root for output files
       int seed = 1;				// random no. generator seed, if < 0 then take the seed from system clock
       int fb = 1;				// need feedback on standard output?
       int resume = atoi(argv[4]);		// resume from a previous job?
