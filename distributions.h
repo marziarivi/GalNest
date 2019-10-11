@@ -24,7 +24,7 @@
 extern "C" {
 #endif
 
-const int N = 100000;
+const int N = 10000;
 const double Emax = 0.804;
 const double Smin = 400.; // uJy
 const double Smax = 3000.;// uJy
